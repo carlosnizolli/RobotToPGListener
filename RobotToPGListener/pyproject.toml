@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robot-to-pg-listener"
+version = "0.1.0"
+description = "Robot Framework listener: persist test results to PostgreSQL (pg8000), configurable and optional metadata"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Carlos Nizolli", email = "carlosnizolli@gmail.com" },
+]
+keywords = ["robotframework", "listener", "postgresql", "pg8000", "qa"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "pg8000>=1.31.0",
+  "robotframework>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/carlosnizolli/RobotToPGListener"
+Repository = "https://github.com/carlosnizolli/RobotToPGListener"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
