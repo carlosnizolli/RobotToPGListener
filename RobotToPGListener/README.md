@@ -1,5 +1,7 @@
 # robot-to-pg-listener
 
+**Pacote no PyPI:** [https://pypi.org/project/robot-to-pg-listener/](https://pypi.org/project/robot-to-pg-listener/)
+
 Biblioteca Python que fornece um **listener do Robot Framework** genérico: durante a execução dos testes ele **coleta resultados** e, ao final, **grava uma linha por teste** em **PostgreSQL** (driver `pg8000`). Cada linha recebe um **`id`** (hash automático) e um instante **`run_at`** definido na **primeira** `start_suite` da execução (UTC). A suite é identificada pelo **`longname`** do Robot; as tags vão em uma coluna **JSON**.
 
 Se você nunca usou um listener: o Robot chama métodos como `start_suite`, `end_test` e `close` na sua classe. Este pacote monta um `INSERT` em lote na tabela configurada.
