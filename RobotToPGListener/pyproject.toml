@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "robot-to-pg-listener"
 version = "0.1.0"
 description = "Robot Framework listener: persist test results to PostgreSQL (pg8000), configurable and optional metadata"
-readme = "README.md"
+readme = "README.en.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [

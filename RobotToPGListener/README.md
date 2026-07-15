@@ -1,5 +1,7 @@
 # robot-to-pg-listener
 
+**Idiomas / Languages:** [Português (Brasil)](README.md) | [English](README.en.md)
+
 **Pacote no PyPI:** [https://pypi.org/project/robot-to-pg-listener/](https://pypi.org/project/robot-to-pg-listener/)
 
 Biblioteca Python que fornece um **listener do Robot Framework** genérico: durante a execução dos testes ele **coleta resultados** e, ao final, **grava uma linha por teste** em **PostgreSQL** (driver `pg8000`). Cada linha recebe um **`id`** (hash automático) e um instante **`run_at`** definido na **primeira** `start_suite` da execução (UTC). A suite é identificada pelo **`longname`** do Robot; as tags vão em uma coluna **JSON**.
@@ -230,6 +232,17 @@ No job, instale o pacote no mesmo ambiente onde o `robot` roda e exporte `RTPG_D
 ```
 
 Se o seu pipeline já monta opções do Robot a partir de uma variável (ex.: `ROBOT_OPTS`), inclua `--listener robot_to_pg_listener.Listener` nessa string.
+
+---
+
+## Related projects / Projetos relacionados
+
+| Project | Description |
+|---------|-------------|
+| [robotframework-gemini](https://github.com/carlosnizolli/robotframework-gemini) | Gemini oracles for RF assertions (PyPI) |
+| [robotframework-gemini_exemplos](https://github.com/carlosnizolli/robotframework-gemini_exemplos) | Example suites |
+| [docker-robotframework](https://github.com/carlosnizolli/docker-robotframework) | Ubuntu image for RF + Browser (includes pg8000) |
+| [RoboCop](https://github.com/carlosnizolli/RoboCop) | Robocop as a GitHub Action |
 
 ---
 
