@@ -1,0 +1,76 @@
+name: Bug report
+description: Reportar um problema ou comportamento inesperado no listener.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar. Preencha o máximo possível para facilitar a reprodução.
+        Thanks for reporting — fill in as much as you can to help us reproduce the issue.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Descrição / Summary
+      description: O que aconteceu? Qual era o resultado esperado?
+      placeholder: Ex.: o insert falha no close() com erro de tipo em run_at...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir / Steps to reproduce
+      description: Comandos, variáveis de ambiente (sem senhas) e estrutura mínima.
+      placeholder: |
+        1. pip install robot-to-pg-listener
+        2. export RTPG_DB_HOST=...
+        3. robot --listener robot_to_pg_listener.Listener tests/
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado / Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento atual / Actual behavior
+      description: Inclua stack trace ou trecho de log (sem senhas/tokens).
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versão do pacote / Package version
+      description: Ex.: saída de `pip show robot-to-pg-listener`
+      placeholder: 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente / Environment
+      description: Python, Robot Framework, SO (ex.: Python 3.12, RF 7.x, Ubuntu 24.04)
+      placeholder: Python 3.12 / Robot Framework 7.0 / Linux
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Contexto adicional / Additional context
+      description: Schema da tabela, RTPG_TABLE_RUNS, etc. (sem credenciais).
+    validations:
+      required: false

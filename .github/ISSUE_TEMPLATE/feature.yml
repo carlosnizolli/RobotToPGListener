@@ -1,0 +1,43 @@
+name: Feature request
+description: Sugerir uma melhoria ou nova funcionalidade.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Descreva a ideia e o problema que ela resolve.
+        Describe the idea and the problem it would solve.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema / Problem
+      description: Qual necessidade ou limitação atual motiva este pedido?
+      placeholder: Ex.: preciso filtrar inserts por tag sem pós-processar no SQL...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta / Proposed solution
+      description: Como você imagina a solução (API, env vars, colunas, etc.)?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas / Alternatives considered
+      description: Outras abordagens que você já pensou ou usou.
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Contexto adicional / Additional context
+      description: Exemplos de uso, links ou mockups.
+    validations:
+      required: false

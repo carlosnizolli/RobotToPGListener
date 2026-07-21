@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentação / Documentation
+    url: https://github.com/carlosnizolli/RobotToPGListener#readme
+    about: README em PT e EN (README.md / README.en.md)
+  - name: Pacote no PyPI
+    url: https://pypi.org/project/robot-to-pg-listener/
+    about: Página do pacote robot-to-pg-listener

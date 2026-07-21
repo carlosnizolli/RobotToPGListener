@@ -1,0 +1,47 @@
+name: Question / Dúvida
+description: Tirar dúvidas sobre instalação, configuração ou uso do listener.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de abrir, confira o [README](https://github.com/carlosnizolli/RobotToPGListener#readme) (PT) e o [README.en.md](https://github.com/carlosnizolli/RobotToPGListener/blob/main/README.en.md) (EN).
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Sua dúvida / Your question
+      description: O que você está tentando fazer e onde travou?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: O que já tentou / What you already tried
+      description: Comandos, variáveis (sem senhas) e trechos relevantes do README.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Assunto / Topic
+      options:
+        - Instalação / Installation (pip, venv)
+        - Configuração / Configuration (RTPG_DB_*, tabela)
+        - Uso com Robot / Robot usage (--listener)
+        - Schema PostgreSQL / PostgreSQL schema
+        - CI/CD (GitHub Actions, Docker)
+        - Outro / Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versão (se souber) / Version (if known)
+      placeholder: 0.1.0
+    validations:
+      required: false
