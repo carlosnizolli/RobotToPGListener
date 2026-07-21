@@ -242,6 +242,7 @@ If your pipeline already builds Robot options from a variable (e.g. `ROBOT_OPTS`
 | [robotframework-gemini](https://github.com/carlosnizolli/robotframework-gemini) | Gemini oracles for RF assertions (PyPI) |
 | [robotframework-gemini_exemplos](https://github.com/carlosnizolli/robotframework-gemini_exemplos) | Example suites |
 | [docker-robotframework](https://github.com/carlosnizolli/docker-robotframework) | Ubuntu image for RF + Browser (includes pg8000) |
+| [robotframework-docker-actions](https://github.com/carlosnizolli/robotframework-docker-actions) | GitHub Action to run tests with the Docker image in CI |
 | [RoboCop](https://github.com/carlosnizolli/RoboCop) | Robocop as a GitHub Action |
 
 ---
